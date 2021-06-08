@@ -1,0 +1,133 @@
+<!-- Linear layout start here -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFD9E2"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical"
+    android:theme="@style/Theme.BMICalculator">
+
+    <!-- Text view for BMI Text -->
+    <TextView
+        android:id="@+id/header"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="40dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:text="BMI Calculator"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:typeface="serif" />
+
+    <!-- Textview for WEIGHT(KG) text -->
+    <TextView
+        android:id="@+id/w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="Weight (in KG)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering weight with hint in kgs -->
+    <EditText
+        android:id="@+id/tfweight"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Enter your weight"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        android:typeface="serif"></EditText>
+
+    <!-- Text view for HEIGHT(CM)text -->
+    <TextView
+        android:id="@+id/h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="Height (in CM)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering height with hint in cm -->
+
+    <!-- Button for calculating the formula, when pressed, with calculate written over it -->
+    <EditText
+        android:id="@+id/tfheight"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Enter your height"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        android:typeface="serif"></EditText>
+
+    <Button
+        android:id="@+id/buttoncalc"
+        android:layout_width="180dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorButtonNormal"
+        android:fadingEdge="vertical"
+        android:fontFamily="serif"
+        android:longClickable="true"
+        android:nextFocusRight="@color/black"
+        android:text="Calculate"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:backgroundTint="?attr/colorButtonNormal" />
+
+    <!-- Text view for showing result -->
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/hyperlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="@string/hyperlink"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
+    <!-- Linear layout ends here -->
